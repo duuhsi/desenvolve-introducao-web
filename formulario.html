@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pesquisa de Satisfação</title>
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação:</h1>
+
+        <form method="post" action="processar-pesquisa.html">
+            <section>
+                <h2>Dados pessoais:</h2>
+
+                <p>
+                    <label for="Nome">Nome:</label>
+                    <input type="text" id="Nome"/>  
+                </p>
+
+                <p>
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text" id="E-mail"/>
+                </p>
+
+                <p>
+                    <label for="Contato">Contato:</label>
+                    <input type="tel" id="Contato"/>
+                </p>
+            </section>
+
+            <section>
+                <h2>Dados da pesquisa:</h2>
+
+                <p>
+                   Em uma escala de 1 a 5, qual o nível do atendimento recebido:
+                   <input type="radio" id="1" name="nivel-atendimento"/>
+                   <label for="1">1</label>
+                   <input type="radio" id="2" name="nivel-atendimento"/>
+                   <label for="2">2</label>
+                   <input type="radio" id="3" name="nivel-atendimento"/>
+                   <label for="3">3</label>
+                   <input type="radio" id="4" name="nivel-atendimento"/>
+                   <label for="4">4</label>
+                   <input type="radio" id="5" name="nivel-atendimento"/>
+                   <label for="5">5</label>
+                </p>
+
+                <p>
+                   Em uma escala de 1 a 5, em relação a resolução do problema, qual o nível:
+                   <input type="radio" id="1" name="nivel-resolucao"/>
+                   <label for="1">1</label>
+                   <input type="radio" id="2" name="nivel-resolucao"/>
+                   <label for="2">2</label>
+                   <input type="radio" id="3" name="nivel-resolucao"/>
+                   <label for="3">3</label>
+                   <input type="radio" id="4" name="nivel-resolucao"/>
+                   <label for="4">4</label>
+                   <input type="radio" id="5" name="nivel-resolucao"/>
+                   <label for="5">5</label>
+                </p>
+
+                <p>
+                    <label for="indicacao">Você indicaria os nossos serviços?</label>
+                    <select>
+                        <option>Muito provável</option>
+                        <option>Provável</option>
+                        <option>Improvável</option>
+                        <option>Nunca</option>
+                    </select>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="compatilhamento-dados"/>
+                    <label for="compatilhamento-dados">Autorizo o compartilhamento dos dados informados nessa pesquisa.</label>
+                </p>
+            </section>
+
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</html>
